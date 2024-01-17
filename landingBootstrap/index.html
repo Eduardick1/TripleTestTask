@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TNFT</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="d-flex align-items-center justify-content-between">
+        <div class="header__wrapper_left d-flex align-items-center">
+          <span class="header__logo">
+            <img src="./assets/логоTNFT — копия.png" alt="Logo" />
+          </span>
+          <label class="d-flex align-items-center header__search">
+            <span class=""
+              ><img src="./assets/зачокпоиска.svg" alt="search"
+            /></span>
+            <input type="text" class="border-0" placeholder="Поиск..." />
+          </label>
+        </div>
+        <span
+          class="header__buttons ml-auto d-flex justify-self-end float-end float-right"
+        >
+          <button>Вход</button>
+          <button>Регистрация</button>
+        </span>
+      </header>
+      <main>
+        <section class="filters d-flex justify-content-beetwen">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Фильтры
+              <svg
+                width="13"
+                height="12"
+                viewBox="0 0 13 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.5 12L12.9952 0.75H0.00480938L6.5 12Z"
+                  fill="#FDD446"
+                />
+              </svg>
+            </button>
+
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">Цена</li>
+              <li class="dropdown-item">Категории</li>
+              <li class="dropdown-item">Типы файлов</li>
+              <li class="dropdown-item">Сеть NFT</li>
+              <li class="dropdown-item">Редкость</li>
+            </ul>
+          </div>
+
+          <select class="form-select">
+            <option selected value="default">По умолчанию</option>
+            <option value="date">По дате</option>
+            <option value="cheap">Дешевле</option>
+            <option value="expensive">Дороже</option>
+            <option value="favorite">По популярности</option>
+          </select>
+        </section>
+        <section class="row">
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="col-3 card p-2">
+            <div class="card__image_wrapper row">
+              <img
+                card="card-img"
+                src="./assets/фоткаCARD — копия.png"
+                alt="card photo"
+              />
+            </div>
+            <div class="card__desc">
+              <h6 class="card__desc_title">Без слов</h6>
+              <div class="card__desc_approved d-flex">
+                <span class="card__desc_approved-image">
+                  <img
+                    src="./assets/маленькая фотка звездыCARD.png"
+                    alt="image approved"
+                  />
+                </span>
+                <span class="card__desc_appoved_text">
+                  <p class="card__desc_approved_text-name">
+                    Настя Ивлеева Вячеславовна
+                  </p>
+                  <span class="card__desc_approved_text-mark d-flex">
+                    <span>проверено</span>
+                    <img
+                      class=""
+                      src="./assets/image 8CardMark.svg"
+                      alt="approved mark"
+                    />
+                  </span>
+                </span>
+              </div>
+              <div
+                class="card__desc_rarity d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Редкость:</p>
+                <span class="">уникальная</span>
+              </div>
+              <div
+                class="card__desc_price d-flex justify-content-between align-items-center text-center"
+              >
+                <p class="">Цена:</p>
+                <span class="">от 500 Р</span>
+              </div>
+              <button
+                class="card__button border-0 row w-100 mx-auto text-center"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          class="pagination d-flex justify-content-center align-items-center"
+        >
+          <span>«</span>
+          <span class="active">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>»</span>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="container">
+        <div style="gap: 80px" class="row">
+          <div class="col-3 footer__column">
+            <h4>NFT</h4>
+            <a href="#">
+              <p>Что такое NFT?</p>
+            </a>
+            <a href="#">
+              <p>Создайте NFT с нами</p>
+            </a>
+          </div>
+          <div class="col-3 footer__column">
+            <h4>Компания</h4>
+            <a href="#">
+              <p>О нас</p>
+            </a>
+            <a href="#">
+              <p>Отправить запрос</p>
+            </a>
+          </div>
+          <div class="col-3 footer__column">
+            <h4>Другое</h4>
+            <a href="#">
+              <p>Условия пользования</p>
+            </a>
+            <a href="#">
+              <p>Политика конфиденциальности</p>
+            </a>
+          </div>
+        </div>
+        <div class="">
+          <span style="margin: 0 10px">
+            <img src="./assets/image 3VKT_NFT.svg" alt="Vk icon"
+          /></span>
+          <span>
+            <img src="./assets/twitter-3 1TNFT.svg" alt="Twitter icon"
+          /></span>
+        </div>
+        <div class="footer__end">
+          <div class="footer__logo">
+            <img src="./assets/Vector 2 1STAR_FOOTER.svg" alt="star" />
+          </div>
+          <p>@ tnft.ru Company, Inc</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

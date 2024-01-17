@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Регистрация</h1>
+      <form>
+        <div class="form__field">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" autocomplete="on" />
+          <span class="Invalid-message"></span>
+        </div>
+        <div class="form__field">
+          <label for="familyName">Фамилия</label>
+          <input
+            type="text"
+            id="familyName"
+            name="familyName"
+            autocomplete="on"
+          />
+          <span class="Invalid-message"></span>
+        </div>
+        <div class="form__field">
+          <label for="email">Электронная почта</label>
+          <input type="email" id="email" name="email" autocomplete="on" />
+          <span class="Invalid-message"></span>
+        </div>
+        <div class="form__field">
+          <label for="password">Пароль</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            dawd
+            autocomplete="off"
+          />
+          <span class="Invalid-message"></span>
+        </div>
+        <div class="form__field">
+          <label for="confirmPassword">Повтор пароля</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            autocomplete="off"
+          />
+          <span class="Invalid-message"></span>
+        </div>
+        <div
+          style="flex-direction: row; align-items: center"
+          class="form__field"
+        >
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="showPassword"
+            name="showPassword"
+          />
+          <label for="showPassword">Показать пароли</label>
+        </div>
+        <div class="form__field">
+          <label for="birth">Дата рождения</label>
+          <input type="date" id="birth" name="birth" autocomplete="on" />
+          <span class="Invalid-message"></span>
+        </div>
+        <button type="submit" name="submitBtn" disabled>Регистрация</button>
+      </form>
+    </main>
+    <script src="./validation.js"></script>
+  </body>
+</html>
