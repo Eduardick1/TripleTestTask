@@ -26,7 +26,7 @@ const isPasswordMatch = (password, confirmPassword) => {
 };
 
 const isBirthValid = (date) => {
-  return new Date(date) < new Date() ? true : false;
+  return new Date(date) < new Date().getFillYear() - 18 ? true : false;
 };
 
 const validation = (
@@ -37,20 +37,6 @@ const validation = (
   confirmPassword,
   date
 ) => {
-  console.log(
-    name,
-    isNameValid(name),
-    familyName,
-    isNameValid(familyName),
-    email,
-    isEmailValid(email),
-    password,
-    isPasswordValid(password),
-    confirmPassword,
-    isPasswordMatch(password, confirmPassword),
-    date,
-    isBirthValid(date)
-  );
   return (
     isNameValid(name) &&
     isNameValid(familyName) &&
